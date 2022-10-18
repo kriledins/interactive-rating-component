@@ -7,5 +7,28 @@
     --mediumGrey: hsl(216, 12%, 54%);
     --darkBlue: hsl(213, 19%, 18%);
     --veryDarkBlue: hsl(216, 12%, 8%);
+    --greyBubble: hsl(215, 18%, 19%);
+    --fontOverpass: 'Overpass', sans-serif;
 }
 
+body {
+    font-family: var(--fontOverpass);
+    background-color: var(--veryDarkBlue);
+}
+
+.card {
+    background: rgb(38,48,60);
+    background: linear-gradient(137deg, rgb(30,34,43) 0%, rgb(25,29,38) 100%);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+
+
+h1 {
+    color: white;
+}
+
+p {
+    color: var(--mediumGrey)
+}
