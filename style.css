@@ -11,9 +11,18 @@
     --fontOverpass: 'Overpass', sans-serif;
 }
 
-body {
+* {
     font-family: var(--fontOverpass);
+}
+
+body {
+    display: flex;
     background-color: var(--veryDarkBlue);
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
 }
 
 .card {
@@ -21,14 +30,43 @@ body {
     background: linear-gradient(137deg, rgb(30,34,43) 0%, rgb(25,29,38) 100%);
     border-radius: 20px;
     padding: 30px;
+    
 }
 
+.circle {
+    display: flex;
+    background-color: var(--greyBubble);
+    color: var(--lightGrey);
+    width: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    justify-content: center;
+}
 
+.ratings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
 
 h1 {
     color: white;
 }
 
 p {
-    color: var(--mediumGrey)
+    color: var(--mediumGrey);
+}
+
+.button {
+    display: flex;
+    background-color: var(--orange);
+    color: var(--white);
+    width: 100%;
+    justify-content: center;
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+    border-radius: 30px;
+    border: 0;
+    padding: 15px;
 }
