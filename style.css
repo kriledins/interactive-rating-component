@@ -39,10 +39,16 @@ body {
     display: flex;
     background-color: var(--greyBubble);
     color: var(--lightGrey);
-    width: 20px;
+    min-width: 15px;
+    width: fit-content;
     padding: 15px;
     border-radius: 25px;
     justify-content: center;
+}
+
+.rating {
+    border: 0;
+    width: 50px;
 }
 
 .ratings {
