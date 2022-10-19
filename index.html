@@ -6,11 +6,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css"/>
   <title>Frontend Mentor | Interactive rating component</title>
+  <script src="functions.js"></script>
 </head>
 <body>
 
   <!-- Rating state start -->
-<main class="card">
+<main class="card" id="card1">
   <div class="circle">
     <img src="images/icon-star.svg"/>
   </div>
@@ -18,23 +19,23 @@
   <p>Please let us know how we did with your support request. All feedback is appreciated 
     to help us improve our offering!</p>
   <div class="ratings">
-    <button class="circle rating">
+    <button class="circle rating" onclick="storeValue(1)">
       1
     </button>
-    <button class="circle rating">
+    <button class="circle rating" onclick="storeValue(2)">
       2
     </button>
-    <button class="circle rating">
+    <button class="circle rating" onclick="storeValue(3)">
       3
     </button>
-    <button class="circle rating">
+    <button class="circle rating" onclick="storeValue(4)">
       4
     </button>
-    <button class="circle rating">
+    <button class="circle rating" onclick="storeValue(5)">
       5
     </button>
   </div>
-  <button class="submit">
+  <button class="submit" onclick="submit()">
     SUBMIT
   </button>
 </main>
@@ -43,15 +44,15 @@
 
   <!-- Thank you state start -->
 
-<main class="card">
+<main class="card" id="card2">
 
-  You selected <!-- Add rating here --> out of 5
+  <img id="thankyouimg" src="/images/illustration-thank-you.svg"/>
+  <div class="circle">You selected <!-- Add rating here --> out of 5</div>
 
   Thank you!
 
   We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!
-
 
 </main>
   <!-- Thank you state end -->
