@@ -67,7 +67,7 @@ p {
     color: var(--mediumGrey);
 }
 
-.button {
+.submit {
     display: flex;
     background-color: var(--orange);
     color: var(--white);
