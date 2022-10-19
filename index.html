@@ -13,7 +13,7 @@
   <!-- Rating state start -->
 <main class="card" id="card1">
   <div class="circle">
-    <img src="images/icon-star.svg"/>
+    <img src="./images/icon-star.svg"/>
   </div>
   <h1>How did we do?</h1>
   <p>Please let us know how we did with your support request. All feedback is appreciated 
@@ -35,6 +35,7 @@
       5
     </button>
   </div>
+  <p id="alert"></p>
   <button class="submit" onclick="submit()">
     SUBMIT
   </button>
@@ -46,14 +47,11 @@
 
 <main class="card" id="card2">
 
-  <img id="thankyouimg" src="/images/illustration-thank-you.svg"/>
-  <div class="circle">You selected <!-- Add rating here --> out of 5</div>
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
+  <img id="thankyouimg" src="./images/illustration-thank-you.svg"/>
+  <div class="circle thankyou">You selected <span id="rating"></span> out of 5</div>
+  <h1>Thank you!</h1>
+  <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!</p>
 </main>
   <!-- Thank you state end -->
 </body>
