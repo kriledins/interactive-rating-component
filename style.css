@@ -33,6 +33,12 @@ body {
     padding: 30px;
     width: fit-content;
     max-width: 350px;
+    flex-flow: column;
+}
+
+#card2 {
+    display: none;
+    align-items: center;
 }
 
 .circle {
@@ -78,6 +84,11 @@ p {
     color: var(--mediumGrey);
 }
 
+#card2>p {
+    text-align: center;
+    margin: 0;
+}
+
 .submit {
     display: flex;
     background-color: var(--orange);
@@ -95,4 +106,14 @@ p {
     background-color: var(--white);
     color: var(--orange);
     cursor: pointer;
+}
+
+#thankyouimg {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.thankyou {
+    color: var(--orange);
+    padding: 10px 15px;
 }
