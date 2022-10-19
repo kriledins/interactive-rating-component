@@ -51,6 +51,17 @@ body {
     width: 50px;
 }
 
+.rating:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.rating:focus {
+    color: var(--white);
+    background-color: var(--mediumGrey);
+}
+
 .ratings {
     display: flex;
     flex-direction: row;
@@ -78,4 +89,10 @@ p {
     border-radius: 30px;
     border: 0;
     padding: 15px;
+}
+
+.submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
 }
