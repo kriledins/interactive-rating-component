@@ -6,4 +6,4 @@
 
 Thanks for checking out this front-end coding challenge.
 
-[Preview site](https://kriledins.github.io/interactive-rating-component/)
+[View and test live site](https://kriledins.github.io/interactive-rating-component/)
